@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  p Data Page
+  p Data Entered: #{data}
+  form(method='POST' action='/data')
+          div
+            label(for='name') Name:
+            input#name(type='text', placeholder='first and last' name='name')
+           button.btn.btn-primary(type='submit') Add
+
+  
